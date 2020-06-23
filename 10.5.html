@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>starsport</title>
+  <title>Starsport</title>
+
+  <link rel="icon" href="img/favicon.ico"   type="image/x-icon">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/10.css">
@@ -23,9 +25,9 @@
   </header>
 
   <!-- Navbar -->
- <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark">
    <div class="container">
-     <a class="navbar-brand mr-5" href="#">Navbar</a>
+     <a class="navbar-brand mr-5" href="#">Starsport</a>
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
      </button>
@@ -35,20 +37,20 @@
          <li class="nav-item">
            <a class="nav-link" href="index.html">
              <i class="fas fa-home"></i>
-             Home
+             домой
            </a>
          </li>
          <li class="nav-item">
            <a class="nav-link" href="10.4.html">
              <i class="fab fa-angellist"></i>
-             About me
+             обо мне
            </a>
          </li>
          <!-- dropdown menu -->
          <li class="nav-item dropdown">
            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-bars"></i>
-             Blog
+             блог
            </a>
            <div class="dropdown-menu" id="custom-dropdown-menu">
              <a class="dropdown-item" href="10.1.html">Бейсбол</a>
@@ -56,24 +58,26 @@
              <a class="dropdown-item" href="10.3.html">Воркаут</a>
            </div>
          </li>
-         <li class="nav-item active">
+         <li class="nav-item  active">
            <a class="nav-link" href="10.5.html">
              <i class="fas fa-address-book"></i>
-             Contact
+             регистрация
            </a>
          </li>
          <li class="nav-item">
            <a class="nav-link" href="10.6.html">
              <i class="fab fa-angellist"></i>
-             Buy
+             VIP статус
            </a>
          </li>
        </ul>
      </div>
      <!-- /menu -->
    </div>
- </nav>
- <!-- /Navbar -->
+  </nav>
+  <!-- /Navbar -->
+
+
 
 
 <!-- Bootstrap core JavaScript -->
@@ -81,43 +85,115 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-  <!-- FOOTER -->
-  <footer class="border-top">
-    <div class="container">
-      <!-- Logo - Posts - Nav -->
-      <div class="row py-3 text-light">
-        <!-- Logo -->
-        <div class="col-md-4 ">
-          <img src="img/sport Team.png" alt="Logo" width="250" class="img-fluid">
-        </div>
-        <!-- About -->
-        <div class="col-md-4">
-          <h3>About</h3>
-          <p>
-            этот сайт посвящён спорту и видам спорта.
-          </p>
-        </div>
-        <!-- Contact me -->
-        <div class="col-md-4">
-          <h3>Contact me</h3>
-          <p>
-            <p class="custom-2">
-            если вы хотите связаться со мной .
-            <br><strong>Email: <a href="#" class="text-white">contact@mail.com</a></strong>
-          </p>
-        </div>
 
+
+
+<div class="row text-center">
+  <div class="col-md-5 m-4 mx-auto">
+    <form class="p-3 shadow bg-white rounded">
+      <h3>зарегистрироваться</h3>
+      <div class="row">
+        <!-- Содержимое формы -->
+        <!-- Name -->
+                 <div class="col-md-6 pb-3 text-center">
+                   <input type="text" class="form-control input" name="имя" data-form-field="имя" placeholder="твоё имя" required="">
+                 </div>
+                 <!-- Phone -->
+                 <div class="col-md-6 pb-3 text-center">
+                   <input type="tel" class="form-control input" name="номер телефона" data-form-field="номер телефона" placeholder="номер телефона" required="">
+                 </div>
+                 <!-- Email -->
+                 <div class="col-md-12 pb-3 text-center">
+                   <input type="email" class="form-control input" name="email" data-form-field="Email" placeholder="Email" required="">
+                 </div>
+
+
+
+                 <!-- Custom Select (Country) -->
+                 <div class="col-md-12 pb-3 text-center">
+                   <select class="custom-select" id="country" required="">
+                     <option value="">страна</option>
+                     <option>США</option>
+                     <option>Россия</option>
+                     <option>Украина</option>
+                   </select>
+                 </div>
+                 <!-- Address -->
+                 <div class="col-md-12 pb-3 text-center">
+                   <input type="text" class="form-control input" name="адрес" data-form-field="адрес" placeholder="адрес" required="">
+                 </div>
+
+        <!-- Checkbox -->
+        <div class="col-md-12 pb-3">
+          <div class="form-group form-check text-center">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">я согласен с условиями этого сайта</label>
+          </div>
+        </div>
+        <!-- Submit button -->
+        <div class="col-md-12 pb-3 input-group-btn ">
+          <button type="submit" class="btn btn-primary btn-form btn-block display-4">сохранить</button>
+        </div>
       </div>
-      <!-- /row -->
+    </form>
+  </div>
+</div>
 
-      <!-- Copyright -->
-      <div class="row py-3 d-flex justify-content-center  border-top">
-        <small class="d-block text-light">Copyright &copy; 2025 </small>
+
+
+
+<!-- Bootstrap core JavaScript -->
+<!-- jQuery.js -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Popper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<!-- Bootstrap.min.js -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="border-top">
+  <div class="container">
+    <!-- Logo - Posts - Nav -->
+    <div class="row py-3 text-light">
+      <!-- Logo -->
+      <div class="col-md-4 ">
+        <img src="img/sport Team.png" alt="Logo" width="250" class="img-fluid">
+      </div>
+      <!-- About -->
+      <div class="col-md-4">
+        <h3>о сайте</h3>
+        <p>
+          этот сайт посвящён спорту и видам спорта.
+        </p>
+      </div>
+      <!-- Contact me -->
+      <div class="col-md-4">
+        <h3>контакты</h3>
+        <p>
+          если вы хотите связаться со мной то вот моя почта.
+          <br><strong>Email: <a href="#" class="text-white">contact@mail.com</a></strong>
+        </p>
       </div>
 
     </div>
-    <!-- /container -->
-  </footer>
+    <!-- /row -->
+
+    <!-- Copyright -->
+    <div class="row py-3 d-flex justify-content-center  border-top">
+      <small class="d-block text-light">Copyright &copy; 2025 </small>
+    </div>
+
+  </div>
+  <!-- /container -->
+</footer>
 
 </body>
 
